@@ -29,7 +29,7 @@ Wiek, płeć, tętno, skurczowe ciśnienie tętnicze, rozkurczowe ciśnienie tę
 ### Przedstawienie zmiennych
 
 | Cecha                    | Opis                                                                                                           |
-|-------------------|-----------------------------------------------------|
+|--------------------------|----------------------------------------------------------------------------------------------------------------|
 | Age                      | Wiek pacjenta w latach                                                                                         |
 | Gender                   | Płeć pacjenta (0 - kobieta, 1 - mężczyzna)                                                                     |
 | Heart Rate               | Maksymalne osiągnięte tętno (za prawidłowe tętno uznaje się przedział od 60 do 100 uderzeń serca na minutę)    |
@@ -123,7 +123,6 @@ df <- df[df$`Heart Rate` != 1111, ]
 ```
 
 Występują trzy obserwacje, w których tętno wynosi 1111. Normalne tętno wynosi maksymalnie 100 uderzeń serca na minutę więc są to nieprawidłowe dane, najprawdopodobniej spowodowane błędem przy wpisywaniu danych, które należy usunąć.
-
 
 ## Opis zbioru
 
@@ -249,13 +248,13 @@ Na powyższym wykresie zależności CK.MB od Troponiny widać wyraźną granicę
 
 Z racji tego, że nasz problem jest klasyfikacyjny, postanowiliśmy porównać ze sobą 3 modele:
 
-- drzewo decyzyjne dla wszystkich zmiennych,
+-   drzewo decyzyjne dla wszystkich zmiennych,
 
-- drzewo decyzyjne bez CK.MB oraz Troponiny,
+-   drzewo decyzyjne bez CK.MB oraz Troponiny,
 
-- regresja logistyczna dla CK.MB i Troponiny,
+-   regresja logistyczna dla CK.MB i Troponiny,
 
-- regresja logistyczna dla reszty zmiennych
+-   regresja logistyczna dla reszty zmiennych
 
 #### Modele z `CK.MB` i `Troponin`
 
